@@ -1,0 +1,155 @@
+/* more button--------------- */
+.more_btn {
+  width: 250rem;
+  margin: 70rem 0;
+  position: relative;
+}
+.filter {
+  filter: brightness(0);
+}
+.more_btn > a {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.more_btn > a > img {
+  width: 100%;
+}
+.more_stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.more_btn > a > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 17rem;
+  font-weight: 900;
+  color: #fff;
+  z-index: 9;
+  font-family: "Noto Sans KR", sans-serif;
+  text-align: center;
+}
+.more_btn:hover a {
+  cursor: url(../img/cursor/cursor-hand.png), auto;
+}
+.more_btn:hover .mute {
+  opacity: 1;
+}
+/* ----------------------------------------------------------- */
+
+.real_main {
+  padding: 113rem 100rem;
+  font-family: "Libre Baskerville", "Noto Sans KR", sans-serif;
+}
+.top_sec {
+  display: flex;
+}
+.img_box {
+  width: 50%;
+  font-size: 0;
+}
+.txt_box {
+  width: 45%;
+  padding-left: 5%;
+  padding-top: 50rem;
+}
+
+.img_box img {
+  width: 100%;
+}
+.txt_pos {
+  width: 100%;
+}
+/* ---------------------------------- */
+
+.brand_name {
+  font-size: 18rem;
+  font-weight: 900;
+  padding-bottom: 30rem;
+}
+.hash {
+  padding-bottom: 20rem;
+}
+.hash > span {
+  font-size: 14rem;
+  color: gray;
+  transition: all 0.3s;
+  padding-right: 10rem;
+}
+.hash > span:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.item_name {
+  font-size: 26rem;
+  font-weight: 900;
+  padding-bottom: 30rem;
+}
+.item_price {
+  font-size: 22rem;
+  font-weight: 900;
+}
+.item_price > span {
+  font-size: 18rem;
+  color: gray;
+  padding-left: 10rem;
+}
+/* ---------------------------------- */
+.scallop {
+  padding: 0 0 70rem;
+}
+.item_text {
+  font-size: 17rem;
+  line-height: 28rem;
+  padding-bottom: 50rem;
+  border-bottom: #000 1px solid;
+}
+.info {
+  border-bottom: #000 1px solid;
+}
+.info_title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  padding: 30rem 0;
+}
+.arrow {
+  transform: rotate(0deg);
+  width: 20rem;
+  transition: all 0.3s;
+}
+.arrow_action {
+  transform: rotate(180deg);
+}
+.info_text {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+.info_action {
+  height: 100px;
+  line-height: 1.8;
+}
+.info_action.info_long {
+  height: 700px;
+  line-height: 1.8;
+}
+.info_text > ul {
+  padding-bottom: 40rem;
+}
+.d_img {
+  width: 70%;
+  font-size: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.d_scallop {
+  display: block;
+  margin: 200rem auto 100rem;
+}

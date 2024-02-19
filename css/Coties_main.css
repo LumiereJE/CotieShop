@@ -1,0 +1,374 @@
+main :not(.foo_deco) {
+  text-align: center;
+}
+/* ham_menu------------------------------------ */
+
+/* banner------------------------------------ */
+.banner {
+  padding: 100rem;
+}
+
+.banner > p:nth-child(1) {
+  font-size: 100rem;
+  font-weight: 900;
+  transform: translateY(50rem);
+}
+.banner > p:nth-child(2) {
+  font-size: 14rem;
+  font-weight: 900;
+}
+.banner > img {
+  width: 830rem;
+}
+.under_txt {
+  font-size: 19rem;
+  font-weight: 900;
+  margin: 50rem;
+}
+/* more button--------------- */
+.more_btn {
+  width: 250rem;
+  margin: 70rem auto;
+  position: relative;
+}
+.mute {
+  opacity: 0;
+}
+.more_btn > a {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.more_btn > a > img {
+  width: 100%;
+}
+.more_stroke {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.more_btn > a > p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-size: 19rem;
+  font-weight: 900;
+}
+.more_btn:hover a {
+  cursor: url(../img/cursor/cursor-hand.png), auto;
+}
+.more_btn:hover .mute {
+  opacity: 1;
+}
+/* brands--------------------------------------------------- */
+
+.brands {
+  padding-bottom: 200rem;
+}
+
+.brands > p:nth-child(1) {
+  font-size: 100rem;
+  font-weight: 900;
+}
+.b_container {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 100rem;
+  padding: 80rem 100rem;
+}
+.L_box {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reverse {
+  order: 1;
+}
+.L_box > img {
+  width: 100%;
+}
+.R_box {
+  width: 44%;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.b_container p:not(.more_btn p) {
+  line-height: 34rem;
+  font-size: 19rem;
+  font-weight: 900;
+  padding-top: 35rem;
+}
+
+.chic_video {
+  text-align: left !important;
+}
+.chic_video > video {
+  width: 90%;
+}
+.max_video {
+  padding: 100rem 0 250rem;
+}
+.max_video > video {
+  width: 600rem;
+}
+
+/* New----------------------------------------------------- */
+.new {
+  padding: 0 5%;
+}
+.new > p:nth-child(1) {
+  font-size: 100rem;
+  font-weight: 900;
+  padding-bottom: 100rem;
+}
+.swiper-wrapper {
+  background-color: pink;
+}
+.swiper-slide {
+  outline: 1px solid red;
+}
+.img_box {
+  width: 100%;
+  /* height: 450px; */
+  padding-bottom: 124.896%;
+  position: relative;
+}
+.img_box img {
+  /* width: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.covered {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.swiper-slide :hover .covered {
+  opacity: 1;
+  z-index: 9;
+  cursor: url(../img/cursor/cursor-hand.png), auto;
+}
+.swiper-pagination {
+  text-align: left !important;
+  padding-top: 100rem;
+}
+.text_box p {
+  text-align: left !important;
+}
+.text_box p:nth-child(1) {
+  font-size: 20rem;
+  padding-top: 24rem;
+}
+
+.text_box p:nth-child(2) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18rem;
+  padding-top: 18rem;
+  line-height: 20rem;
+}
+/* line_banner--------------------------------------------------- */
+.txt_item {
+  font-size: 100rem;
+  display: flex;
+}
+.txt_item > div {
+  white-space: nowrap;
+
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  box-sizing: border-box;
+
+  animation: lb_ani 20s linear infinite;
+}
+.txt_item > div > i {
+  margin-right: 60rem;
+}
+@keyframes lb_ani {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* Cotielog----------------------------------------------------- */
+.cotielog {
+  padding: 150rem 100rem 100rem;
+}
+.cotielog > p:nth-child(1) {
+  font-size: 100rem;
+  font-weight: 900;
+  padding-bottom: 100rem;
+}
+
+.log_container {
+  display: flex;
+  justify-content: space-evenly;
+
+  font-size: 22rem;
+  font-weight: 900;
+}
+.log_container p {
+  text-align: left !important;
+  padding-top: 15rem;
+}
+
+.log_L img {
+  width: 500rem;
+}
+.log_R img {
+  width: 500rem;
+}
+.L_1,
+.R_1 {
+  padding-bottom: 100rem;
+}
+.log_R {
+  padding: 127rem 0 50rem;
+}
+
+.log_L > div {
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: all 0.5s;
+}
+.log_R > div {
+  opacity: 0;
+  transform: translateY(100rem);
+  transition: all 0.5s;
+}
+
+.opacity {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Cotielog----------------------------------------------------- */
+.insta {
+  padding: 50rem 100rem 100rem;
+}
+.insta > p:nth-child(1) {
+  font-size: 100rem;
+  font-weight: 900;
+  padding-bottom: 100rem;
+}
+.insta_container {
+  display: flex;
+  justify-content: space-between;
+}
+.insta_img {
+  width: 300rem;
+  position: relative;
+}
+.insta_img > img {
+  width: 100%;
+}
+.bk_cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.3s;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.insta_li:hover .bk_cover {
+  opacity: 1;
+  z-index: 9;
+  cursor: url(../img/cursor/cursor-hand.png), auto;
+}
+/* 폰트 조절.      패드미니768 ~ 웹 직전 */
+@media screen and (max-width: 1023px) {
+  /* header {
+        width: 25%;
+    } */
+  .under_txt {
+    font-size: 16px;
+  }
+  .more_btn {
+    width: 170px;
+    margin: 50px auto;
+    position: relative;
+  }
+  .more_btn > a > p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .b_container p:not(.more_btn p) {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 35rem;
+  }
+  /* new 상품 */
+  .text_box p:nth-child(1) {
+    font-size: 18px;
+    padding-top: 24rem;
+  }
+  .text_box p:nth-child(2) {
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 16px;
+    padding-top: 18px;
+    line-height: 20px;
+  }
+}
+
+/* 구조바꾸기 - 세로로.   모바일 ~ 패드미니768 직전  */
+@media screen and (max-width: 767px) {
+  /* header {
+        width: 25%;
+    } */
+
+  .under_txt {
+    width: 62%;
+    margin: 50rem auto;
+    font-size: 14px;
+  }
+  .more_btn {
+    width: 100px;
+    margin: 40px auto;
+    position: relative;
+  }
+  .more_btn > a > p {
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  /* 구조 정렬 */
+  .banner {
+    padding: 200rem 100rem 100rem;
+  }
+  .b_container {
+    display: block;
+  }
+  .L_box {
+    width: 50%;
+    margin: 0 auto 30px;
+  }
+  .R_box {
+    width: 100%;
+    text-align: center;
+  }
+  .b_container p:not(.more_btn p) {
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 35rem;
+  }
+  .brands {
+    padding-bottom: 0px;
+  }
+}
