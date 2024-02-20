@@ -6,12 +6,19 @@ main :not(.foo_deco) {
 /* banner------------------------------------ */
 .banner {
   padding: 100rem;
+  position: relative;
 }
 
 .banner > p:nth-child(1) {
   font-size: 100rem;
   font-weight: 900;
-  transform: translateY(50rem);
+
+  width: 100%;
+  position: absolute;
+  top: 5vw;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 10;
 }
 .banner > p:nth-child(2) {
   font-size: 14rem;
@@ -19,6 +26,14 @@ main :not(.foo_deco) {
 }
 .banner > img {
   width: 830rem;
+  padding-top: 20vw;
+  transition: all 0.3s;
+}
+.bn_img {
+  transform: rotate(0deg);
+}
+.bn_img:hover {
+  transform: rotate(15deg);
 }
 .under_txt {
   font-size: 19rem;
@@ -126,18 +141,20 @@ main :not(.foo_deco) {
 /* New----------------------------------------------------- */
 .new {
   padding: 0 5%;
+  padding-bottom: 40px;
 }
 .new > p:nth-child(1) {
   font-size: 100rem;
   font-weight: 900;
   padding-bottom: 100rem;
 }
-.swiper-wrapper {
+
+/* .swiper-wrapper {
   background-color: pink;
 }
 .swiper-slide {
   outline: 1px solid red;
-}
+} */
 .img_box {
   width: 100%;
   /* height: 450px; */
@@ -292,9 +309,6 @@ main :not(.foo_deco) {
 }
 /* 폰트 조절.      패드미니768 ~ 웹 직전 */
 @media screen and (max-width: 1023px) {
-  /* header {
-        width: 25%;
-    } */
   .under_txt {
     font-size: 16px;
   }
@@ -326,11 +340,11 @@ main :not(.foo_deco) {
   }
 }
 
-/* 구조바꾸기 - 세로로.   모바일 ~ 패드미니768 직전  */
+/* 모바일 ~ 패드미니768 직전  */
 @media screen and (max-width: 767px) {
   /* header {
-        width: 25%;
-    } */
+    width: 25%;
+  } */
 
   .under_txt {
     width: 62%;
@@ -348,8 +362,12 @@ main :not(.foo_deco) {
   }
 
   /* 구조 정렬 */
-  .banner {
-    padding: 200rem 100rem 100rem;
+  .banner > p:nth-child(1) {
+    top: 12vw;
+  }
+
+  .banner > img {
+    padding-top: 27vw;
   }
   .b_container {
     display: block;

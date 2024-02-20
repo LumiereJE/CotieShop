@@ -1,98 +1,94 @@
-
 a {
-    text-decoration: none;
-    color: inherit;
-    /* cursor: none; */
+  text-decoration: none;
+  color: inherit;
+  /* cursor: none; */
 }
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .font_eng {
-    font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
 }
 .font_kor {
-    font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 /* --------------------------------------------- */
 
 /* 내꺼 */
 html {
-    font-size: 0.067568vw;
+  font-size: 0.067568vw;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    
-    cursor: url(../img/cursor/cursor-pointer.png), auto;
-    /* font-family: 'Libre Baskerville', serif; */
-    font-family: 'NotoSansKR','Libre Baskerville',sans-serif;
+  margin: 0;
+  padding: 0;
 
-    /* 내꺼 */
-    font-size: 16rem;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
+  /* font-family: 'Libre Baskerville', serif; */
+  font-family: "NotoSansKR", "Libre Baskerville", sans-serif;
+
+  /* 내꺼 */
+  font-size: 16rem;
 }
-
-
-
 
 /* ////////////////////////////////////////// */
 
 header {
-    width: 100%;
-    height: 115rem;
-    font-size: 18px;
-    font-weight: 900;
+  width: 100%;
+  height: 115rem;
+  font-size: 18px;
+  font-weight: 900;
 
-    padding: 20px 30px;
-    box-sizing: border-box;
-    background-color: #f0ede6;
-    transition: all 0.2s;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  background-color: #f0ede6;
+  transition: all 0.2s;
 
-    position: fixed !important;
-    z-index: 9999;
+  position: fixed !important;
+  z-index: 9999;
 
-    position: relative;
+  /* position: relative; */
 
-    /* 내꺼 */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  /* 내꺼 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header_active {
-    height: 100rem;
-    border-bottom: 1px solid #000;
+  height: 100rem;
+  border-bottom: 1px solid #000;
 }
 .logo {
-    /* 내꺼 */
-    width: 130rem;
-    height: 85rem;
-    display: block;
+  /* 내꺼 */
+  width: 130rem;
+  height: 85rem;
+  display: block;
 }
 .logo:hover {
-    cursor: url(../img/cursor/cursor-pointer.png),auto;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 .logo svg {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 /* --nav-- */
 .nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.nav > li { 
-    padding: 25rem;
-    font-size: 24rem;  
-    position: relative;
+.nav > li {
+  padding: 25rem;
+  font-size: 24rem;
+  position: relative;
 }
 .nav li :hover {
-    cursor: url(../img/cursor/cursor-pointer.png),auto;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 
 /* .dot {
@@ -107,301 +103,296 @@ header {
 } */
 
 .menu_box {
-    font-size: 20rem;
-    font-weight: 200;
-    
-    box-sizing: border-box;
-    
-    background-color: #000;
-    color: #FFF;
-    
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
+  font-size: 20rem;
+  font-weight: 200;
 
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 100%;
+  box-sizing: border-box;
+
+  background-color: #000;
+  color: #fff;
+
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 100%;
 }
 
 .menu_box > li {
-    height: 50rem;
+  height: 50rem;
 }
-.brands_h ,.outdoor_h ,.indoor_h {
-    padding: 0 16rem;
+.brands_h,
+.outdoor_h,
+.indoor_h {
+  padding: 0 16rem;
 }
-
 
 .nav > li:hover .brands_h {
-    height: 170rem;
-    padding: 20rem 16rem;
+  height: 170rem;
+  padding: 20rem 16rem;
 }
 .nav > li:hover .outdoor_h {
-    height: 370rem;
-    padding: 20rem 16rem;
+  height: 370rem;
+  padding: 20rem 16rem;
 }
 .nav > li:hover .indoor_h {
-    height: 170rem;
-    padding: 20rem 16rem;
+  height: 170rem;
+  padding: 20rem 16rem;
 }
 .menu_box > li:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* ---- */
 .etc {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .etc img {
-    width: 20rem;
+  width: 20rem;
 }
 .etc a {
-    cursor: url(../img/cursor/cursor-pointer.png),auto;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 .buy_shop {
-    margin: 0 15rem;
+  margin: 0 15rem;
 }
 
 /* 햄버거 버튼///////////////////////////////////////////////////// */
 
 .ham {
-    width: 50rem;
-    height: 50rem;
-    background-color: #f0ede6;;
-    position: absolute;
-    z-index: 550;
-    top: 24rem;
-    right: 70rem;
+  width: 50rem;
+  height: 50rem;
+  background-color: #f0ede6;
+  position: absolute;
+  z-index: 550;
+  top: 24rem;
+  right: 70rem;
 
-    display: none;  
+  display: none;
 }
 .ham_line {
-    background-color: #000;
-    width: 100%;
-    height: 2px;
-    position: absolute;   
+  background-color: #000;
+  width: 100%;
+  height: 2px;
+  position: absolute;
 }
 .ham_line:nth-child(1) {
-    top: 3rem;
-    transition: all 0.3s;
+  top: 3rem;
+  transition: all 0.3s;
 }
 .ham_line:nth-child(2) {
-    top: 23rem;
+  top: 23rem;
 }
 .ham_line:nth-child(3) {
-    bottom: 3rem;
-    transition: all 0.3s;
+  bottom: 3rem;
+  transition: all 0.3s;
 }
 
 /* ------------------------------------------- */
 .ham_pan {
-    /* width: 100%; */
-    height: 100%;
-    background-color: #f0ede6;
+  /* width: 100%; */
+  height: 100%;
+  background-color: #f0ede6;
 
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-    
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: all 0.5s;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s;
 }
 .pan_inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 100rem 0 0 100rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 100rem 0 0 100rem;
 }
 .pan_inner > li {
-    font-size: 50rem;
-    margin: 50rem 0rem;
+  font-size: 50rem;
+  margin: 50rem 0rem;
 }
 
 .active_pan {
-    width: 100%;
-    display: block;
-    visibility: inherit;
-    z-index: 300;
-    opacity: 1;
+  width: 100%;
+  display: block;
+  visibility: inherit;
+  z-index: 300;
+  opacity: 1;
 }
 .active_ham {
-    opacity: 1;
-
+  opacity: 1;
 }
 
 /* 메인///////////////////////////////////////////////////// */
 
 main {
-    background-color: #f0ede6;
-    position: relative;
+  background-color: #f0ede6;
+  position: relative;
 }
-
 
 /* ------------------------- */
 
-
 .big_pos {
-    width: 300rem;
+  width: 300rem;
 }
 .top_btn_active {
-    position: absolute;
-    /* bottom: 50rem; */
-    /* top: -218rem; */
-    bottom: calc(550rem + 153px + 50px);
-    right: 30rem;
+  position: absolute;
+  /* bottom: 50rem; */
+  /* top: -218rem; */
+  bottom: calc(550rem + 153px + 50px);
+  right: 30rem;
 }
-
 
 /* ////////////////////////////////////// */
 .top_btn {
-    position: fixed;
-    bottom: 5%;
-    right: 5%; 
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 
-    cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
-} 
+  cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
+}
 .top_btn a {
-    font-size: 26rem;
-    font-weight: 600;
-    color: #000;
+  font-size: 26rem;
+  font-weight: 600;
+  color: #000;
 
-    cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
+  cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
 }
 .top_btn .tb_img {
-    position: absolute;
-    left: 0;
-    top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
 
-    display: none; /* 평소엔 안보이다가 tob_btn에 마우스 올리면 나타남*/
+  display: none; /* 평소엔 안보이다가 tob_btn에 마우스 올리면 나타남*/
 }
 .top_btn:hover .tb_img {
-    display: block;
+  display: block;
 }
 .top_btn > a > p {
-    width: 50rem;
-    text-align: center;
-    padding: 20rem 0;
+  width: 50rem;
+  text-align: center;
+  padding: 20rem 0;
 }
-
 
 /* 푸터///////////////////////////////////////////////////// */
 .foo_deco {
-    font-size: 0;
-    overflow: hidden;
+  font-size: 0;
+  overflow: hidden;
 }
 .foo_area {
-    height: 550rem;
-    background-color: black;
-    color: #FFF;
-    padding: 50rem;
-    box-sizing: border-box;
+  height: 550rem;
+  background-color: black;
+  color: #fff;
+  padding: 50rem;
+  box-sizing: border-box;
 
-    position: relative;
+  position: relative;
 }
 .foo_big {
-    font-size: 58rem;
+  font-size: 58rem;
 }
 
 .foo_about:hover {
-    color: gray;
-    cursor: url(../img/cursor/cursor-pointer.png),auto;
+  color: gray;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 .foo_buy:hover {
-    color: gray;
-    cursor: url(../img/cursor/cursor-pointer.png),auto;
+  color: gray;
+  cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 .foo_right {
-    font-size: 28rem;
-    font-weight: 500;
-    position: absolute;
-    top: 0;
-    right: 100rem;
+  font-size: 28rem;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  right: 100rem;
 }
 .foo_right > a {
-    float: left;
-    padding-right: 40rem;
+  float: left;
+  padding-right: 40rem;
 }
-
 
 .add_area {
-    font-weight: 500;
-    line-height: 40rem;
-    margin: 30rem 0 50rem;
+  font-weight: 500;
+  line-height: 40rem;
+  margin: 30rem 0 50rem;
 }
 .add_title {
-    font-size: 22rem;
+  font-size: 22rem;
 }
 .add {
-    color: gray;
-    font-size: 16rem;
+  color: gray;
+  font-size: 16rem;
 }
 .foo_copy {
-    color: gray;
-    font-size: 22rem;
-    font-weight: 900;
+  color: gray;
+  font-size: 22rem;
+  font-weight: 900;
 }
 
-@media screen and (max-width:1023px) {
-    header {
-        width: 100%;
-        height: 100rem;
-    }
-    .logo {
-        width: 160rem;
-        height: 80rem;
-    }
-    .nav {
-        display: none;
-    }
-    .ham {
-        display: block;
-    }
-    .ham_pan {
-        /* max-width: 400rem; */
-        width: calc(100% - 30rem);
-        display: inline-block;
-    }
+@media screen and (max-width: 1023px) {
+  header {
+    width: 100%;
+    height: 100rem;
+  }
+  .logo {
+    width: 160rem;
+    height: 80rem;
+  }
+  .nav {
+    display: none;
+  }
+  .ham {
+    display: block;
+  }
+  .ham_pan {
+    /* max-width: 400rem; */
+    width: calc(100% - 30rem);
+    display: inline-block;
+  }
 }
 
-@media screen and (max-width:767px) {
-    .font_kor {
-        font-family: 'Noto Sans KR', sans-serif;                    
-    }
-    header {
-        height: 80px;
-    }
-    .header_active {
-        height: 80px;
-        border-bottom: 1px solid #000;
-    }
-    .logo {
-        width: 100px;
-        height: 50px;
-    }
-    .ham {
-        width: 20px;
-        height: 20px;
+@media screen and (max-width: 767px) {
+  .font_kor {
+    font-family: "Noto Sans KR", sans-serif;
+  }
+  header {
+    /* width: 25%; */
+    height: 80px;
+  }
+  .header_active {
+    height: 80px;
+    border-bottom: 1px solid #000;
+  }
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+  .ham {
+    width: 20px;
+    height: 20px;
 
-        top: 28px;
-        right: 30px;
-    }
-    .ham_line:nth-child(1) {
-        top: 1px;
-        transition: all 0.3s;
-    }
-    .ham_line:nth-child(2) {
-        top: 9px;
-    }
-    .ham_line:nth-child(3) {
-        bottom: 1px;
-        transition: all 0.3s;
-    }
-    .top_btn a {
-        font-size: 14px;
-    }
+    top: 28px;
+    right: 30px;
+  }
+  .ham_line:nth-child(1) {
+    top: 1px;
+    transition: all 0.3s;
+  }
+  .ham_line:nth-child(2) {
+    top: 9px;
+  }
+  .ham_line:nth-child(3) {
+    bottom: 1px;
+    transition: all 0.3s;
+  }
+  .top_btn a {
+    font-size: 14px;
+  }
 }
-
