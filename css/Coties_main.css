@@ -195,6 +195,10 @@ main :not(.foo_deco) {
   line-height: 20rem;
 }
 /* line_banner--------------------------------------------------- */
+.line_banner {
+  width: 100%;
+  overflow: hidden;
+}
 .txt_item {
   font-size: 100rem;
   display: flex;
@@ -363,11 +367,11 @@ main :not(.foo_deco) {
 
   /* 구조 정렬 */
   .banner > p:nth-child(1) {
-    top: 12vw;
+    top: 15vw;
   }
 
   .banner > img {
-    padding-top: 27vw;
+    padding-top: 30vw;
   }
   .b_container {
     display: block;

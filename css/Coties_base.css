@@ -91,17 +91,6 @@ header {
   cursor: url(../img/cursor/cursor-pointer.png), auto;
 }
 
-/* .dot {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    background: #000;
-    position: absolute;
-    top: 10rem;
-    left: 70rem;
-    padding: 0!important;
-} */
-
 .menu_box {
   font-size: 20rem;
   font-weight: 200;
@@ -164,13 +153,13 @@ header {
 /* 햄버거 버튼///////////////////////////////////////////////////// */
 
 .ham {
-  width: 50rem;
-  height: 50rem;
+  width: 50px;
+  height: 50px;
   background-color: #f0ede6;
   position: absolute;
   z-index: 550;
-  top: 24rem;
-  right: 70rem;
+  top: 24px;
+  right: 70px;
 
   display: none;
 }
@@ -178,17 +167,18 @@ header {
   background-color: #000;
   width: 100%;
   height: 2px;
+  border-radius: 2px;
   position: absolute;
 }
 .ham_line:nth-child(1) {
-  top: 3rem;
+  top: 3px;
   transition: all 0.3s;
 }
 .ham_line:nth-child(2) {
-  top: 23rem;
+  top: 23px;
 }
 .ham_line:nth-child(3) {
-  bottom: 3rem;
+  bottom: 3px;
   transition: all 0.3s;
 }
 
@@ -243,10 +233,8 @@ main {
 }
 .top_btn_active {
   position: absolute;
-  /* bottom: 50rem; */
-  /* top: -218rem; */
-  bottom: calc(550rem + 153px + 50px);
   right: 30rem;
+  bottom: calc(550rem + 153px + 50px);
 }
 
 /* ////////////////////////////////////// */
@@ -255,21 +243,21 @@ main {
   bottom: 5%;
   right: 5%;
 
-  cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
+  cursor: none;
 }
 .top_btn a {
   font-size: 26rem;
   font-weight: 600;
   color: #000;
 
-  cursor: none; /* a태그와 탑버튼에 기본 커서 없앰 */
+  cursor: none;
 }
 .top_btn .tb_img {
   position: absolute;
   left: 0;
   top: 0;
 
-  display: none; /* 평소엔 안보이다가 tob_btn에 마우스 올리면 나타남*/
+  display: none;
 }
 .top_btn:hover .tb_img {
   display: block;
@@ -339,7 +327,8 @@ main {
 @media screen and (max-width: 1023px) {
   header {
     width: 100%;
-    height: 100rem;
+    /* height: 100rem; */
+    height: 80px;
   }
   .logo {
     width: 160rem;
@@ -350,11 +339,30 @@ main {
   }
   .ham {
     display: block;
+    width: 26px;
+    height: 26px;
+
+    top: 24px;
+    right: 30px;
+    transition: all 0.3s;
+  }
+  .ham_active {
+    top: 12px;
   }
   .ham_pan {
-    /* max-width: 400rem; */
-    width: calc(100% - 30rem);
-    display: inline-block;
+    width: 100%;
+  }
+
+  .ham_line:nth-child(1) {
+    top: 1px;
+    transition: all 0.3s;
+  }
+  .ham_line:nth-child(2) {
+    top: 12px;
+  }
+  .ham_line:nth-child(3) {
+    bottom: 1px;
+    transition: all 0.3s;
   }
 }
 
@@ -374,23 +382,8 @@ main {
     width: 100px;
     height: 50px;
   }
-  .ham {
-    width: 20px;
-    height: 20px;
-
-    top: 28px;
-    right: 30px;
-  }
-  .ham_line:nth-child(1) {
-    top: 1px;
-    transition: all 0.3s;
-  }
-  .ham_line:nth-child(2) {
-    top: 9px;
-  }
-  .ham_line:nth-child(3) {
-    bottom: 1px;
-    transition: all 0.3s;
+  .ham_active {
+    top: 26px;
   }
   .top_btn a {
     font-size: 14px;
