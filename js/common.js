@@ -94,3 +94,16 @@ $(document).ready(function () {
     $(".ham_pan").toggleClass("active_pan");
   });
 });
+$(window).scroll(function () {
+  let s_top = $(window).scrollTop();
+  // let s_bot = s_top + w_height;
+
+  // header-------------------------------------------------------
+  if (0 < s_top) {
+    $("header").addClass("header_active");
+    $(".ham").addClass("ham_active");
+  } else if (0 >= s_top) {
+    $("header").removeClass("header_active");
+    $(".ham").removeClass("ham_active");
+  }
+});

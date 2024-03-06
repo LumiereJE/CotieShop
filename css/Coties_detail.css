@@ -59,14 +59,13 @@
   padding-left: 5%;
   padding-top: 50rem;
 }
-
 .img_box img {
   width: 100%;
 }
 .txt_pos {
   width: 100%;
 }
-/* ---------------------------------- */
+/* txt_box---------------------------------- */
 
 .brand_name {
   font-size: 18rem;
@@ -77,7 +76,7 @@
   padding-bottom: 20rem;
 }
 .hash > span {
-  font-size: 14rem;
+  font-size: 18rem;
   color: gray;
   transition: all 0.3s;
   padding-right: 10rem;
@@ -102,11 +101,11 @@
 }
 /* ---------------------------------- */
 .scallop {
-  padding: 0 0 70rem;
+  margin-bottom: 70rem;
 }
 .item_text {
   font-size: 17rem;
-  line-height: 28rem;
+  line-height: 34rem;
   padding-bottom: 50rem;
   border-bottom: #000 1px solid;
 }
@@ -152,4 +151,134 @@
 .d_scallop {
   display: block;
   margin: 200rem auto 100rem;
+}
+@media screen and (max-width: 1024px) {
+  .more_btn {
+    margin: 100rem 76%;
+  }
+  .more_btn > a > p {
+    font-size: 23rem;
+  }
+  .top_sec {
+    display: block;
+    margin-top: 50px;
+  }
+  .img_box {
+    width: 80%;
+    /* max-height: 600px; */
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+  .img_box img {
+    width: 100%;
+  }
+  .img_box img:first-child {
+    display: none;
+  }
+  .txt_box {
+    width: 90%;
+  }
+  .d_img {
+    width: 100%;
+  }
+  /* ------- */
+  .brand_name {
+    font-size: 30rem;
+  }
+  .hash > span {
+    font-size: 24rem;
+  }
+  .item_name {
+    font-size: 32rem;
+  }
+  .item_price {
+    font-size: 30rem;
+  }
+  .txt_box .scallop {
+    text-align: center;
+  }
+  /* --- */
+  .scallop {
+    display: block;
+    margin: 200rem auto;
+  }
+  .item_text {
+    font-size: 26rem;
+    line-height: 48rem;
+  }
+  .info_title {
+    font-size: 24rem;
+  }
+  .arrow {
+    width: 30rem;
+  }
+  .info_action.info_long {
+    height: 450px;
+  }
+  .info_text > ul {
+    font-size: 23rem;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 470px) {
+  .more_btn {
+    width: 400rem;
+    margin: 100rem 64%;
+  }
+  .more_btn > a > p {
+    font-size: 46rem;
+    font-weight: 500;
+  }
+  .txt_box {
+    width: 90%;
+  }
+  .d_img {
+    width: 100%;
+  }
+  /* ------- */
+  .brand_name {
+    font-size: 60rem;
+    padding-bottom: 60rem;
+  }
+  .hash > span {
+    font-size: 46rem;
+  }
+  .item_name {
+    font-size: 60rem;
+    padding-bottom: 50rem;
+  }
+  .item_price {
+    font-size: 60rem;
+  }
+  .item_price > span {
+    font-size: 50rem;
+    font-weight: 300;
+  }
+  .txt_box .scallop {
+    text-align: center;
+  }
+  /* --- */
+  .scallop {
+    display: block;
+    margin: 200rem auto;
+  }
+  .item_text {
+    font-size: 60rem;
+    line-height: 100rem;
+  }
+  .info_title {
+    font-size: 60rem;
+    padding: 60rem 0;
+  }
+  .arrow {
+    width: 70rem;
+  }
+  .info_action.info_long {
+    height: 900px;
+  }
+  .info_text > ul {
+    font-size: 56rem;
+  }
 }

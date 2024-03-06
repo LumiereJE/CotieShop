@@ -41,7 +41,7 @@ body {
 
 header {
   width: 100%;
-  height: 115rem;
+  height: 100px;
   font-size: 18px;
   font-weight: 900;
 
@@ -61,7 +61,7 @@ header {
   align-items: center;
 }
 .header_active {
-  height: 100rem;
+  height: 80px;
   border-bottom: 1px solid #000;
 }
 .logo {
@@ -153,15 +153,18 @@ header {
 /* 햄버거 버튼///////////////////////////////////////////////////// */
 
 .ham {
-  width: 50px;
+  /* width: 50px;
   height: 50px;
-  background-color: #f0ede6;
+  background-color: #f0ede6; */
   position: absolute;
   z-index: 550;
   top: 24px;
-  right: 70px;
+  right: 30px;
 
   display: none;
+}
+.ham_active {
+  top: 12px;
 }
 .ham_line {
   background-color: #000;
@@ -324,12 +327,7 @@ main {
   font-weight: 900;
 }
 
-@media screen and (max-width: 1023px) {
-  header {
-    width: 100%;
-    /* height: 100rem; */
-    height: 80px;
-  }
+@media screen and (max-width: 1024px) {
   .logo {
     width: 160rem;
     height: 80rem;
@@ -342,17 +340,16 @@ main {
     width: 26px;
     height: 26px;
 
-    top: 24px;
+    top: 36px;
     right: 30px;
     transition: all 0.3s;
   }
   .ham_active {
-    top: 12px;
+    top: 26px;
   }
   .ham_pan {
     width: 100%;
   }
-
   .ham_line:nth-child(1) {
     top: 1px;
     transition: all 0.3s;
@@ -366,26 +363,45 @@ main {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .font_kor {
     font-family: "Noto Sans KR", sans-serif;
   }
   header {
-    /* width: 25%; */
-    height: 80px;
+    height: 100px;
   }
   .header_active {
     height: 80px;
-    border-bottom: 1px solid #000;
   }
   .logo {
     width: 100px;
     height: 50px;
+  }
+  .ham {
+    top: 36px;
   }
   .ham_active {
     top: 26px;
   }
   .top_btn a {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 470px) {
+  header {
+    height: 80px;
+  }
+  .header_active {
+    height: 60px;
+  }
+  .logo {
+    width: 80px;
+    height: 40px;
+  }
+  .ham {
+    top: 26px;
+  }
+  .ham_active {
+    top: 17px;
   }
 }

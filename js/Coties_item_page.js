@@ -3,27 +3,6 @@ $(document).ready(function () {
   let w_height = $(window).innerHeight();
   let f_o_top = $("footer").offset().top - 100;
 
-  $(window).scroll(function () {
-    let s_top = $(window).scrollTop();
-    let s_bot = s_top + w_height;
-
-    // header-------------------------------------------------------
-    if (0 < s_top) {
-      $("header").addClass("header_active");
-    } else if (0 >= s_top) {
-      $("header").removeClass("header_active");
-    }
-
-    // top_btn-------------------------------------------------------
-    //    if(s_bot >= f_o_top) {
-    //        $('.top_btn').addClass('top_btn_active')
-    //    }
-    //    else {
-    //        $('.top_btn').removeClass('top_btn_active')
-    //    }
-    // -------------------------------------------------------
-  });
-
   $(window).resize(function () {
     w_height = $(window).innerHeight();
   });
